@@ -14,8 +14,6 @@
       - cloudbees-folder
       - timestamper
       - ws-cleanup
-    remote_pipeline_root_dir: "/var/lib/jenkins/pipelines"
-    remote_pipeline_dir: "{{ remote_pipeline_root_dir }}/{{ lookup('file', playbook_dir + '/.magritte/project-name/') }}"
 
   pre_tasks:
     - name: Add OpenJDK PPA (for Java 8)
